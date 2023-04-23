@@ -1,0 +1,15 @@
+public frmReverse()
+{
+private void button1_Click(object sender, EventArgs e)
+ {
+ int firstInt = int.Parse(txtNum1.Text);
+ int middleInt = int.Parse(txtNum2.Text);
+ int lastInt = int.Parse(txtNum3.Text);
+ lblDisplay.Text = "The numbers are " + firstInt + " " + middleInt + " " + lastInt;
+ int temp = a;
+ a = c;
+ c = temp;
+ lblDisplay.Text = "The numbers are " + firstInt + " " + middleInt + " " + lastInt;
+
+ }
+}
