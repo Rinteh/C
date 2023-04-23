@@ -1,0 +1,34 @@
+using System
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using static System.Console; 
+namespace DailyTemps
+{     
+class Program     
+{         
+static void Main(string[] args)         
+{             int temperature;
+
+string inputString; 
+int count = 0; 
+int total = 0;             
+double average;             
+const int LOW = -20
+const int HIGH = 130;             
+const int QUIT = 999;             
+Write("Enter temperature >> ");             
+inputString = ReadLine();             
+temperature = Convert.ToInt32(inputString);             
+while (temperature != QUIT)             
+{                 
+if (temperature < LOW || temperature > HIGH)                    
+WriteLine("Valid temperatures range from {0} to {1}. Please reenter temperature.",LOW, HIGH);                
+else
+{                     
+total += temperature;
+}
+}
+++count;
+]
